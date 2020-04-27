@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Listing</title>
+    <meta charset="UTF-8">
+    <script src="./scripts/file.ts"></script>
+</head>
+<body>
+
+<button id="totalButton">Load Data</button>
+
+<div>
+    <table id="dataList">
+        <thead>
+        <tr>
+            <th>Sno.</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<template id="rowTmpl">
+    <tr>
+        <td class="serial">
+            <label></label>
+        </td>
+        <td>
+            <label for="student-firstname" class="editable"></label>
+            <input id="student-firstname" value=""/>
+        </td>
+        <td>
+            <label for="student-lastname" class="editable"></label>
+            <input id="student-lastname" value=""/>
+        </td>
+        <td class="actions">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+        </td>
+        <td class="editAction" style="display: none">
+            <button class="save">save</button>
+            <button class="cancel">cancel</button>
+        </td>
+    </tr>
+</template>
+</body>
+</html>
+
